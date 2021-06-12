@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200sp"
+    xmlns:CardView="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    CardView:cardBackgroundColor="@color/principallight"
+    CardView:cardElevation="10dp"
+    CardView:cardCornerRadius="10dp"
+    CardView:contentPadding="5dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/bebidas" />
+
+                <TextView
+                    android:id="@+id/item_precio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="$"
+                    android:textColor="@color/textosecundario"
+                    android:textSize="@dimen/precio_pizza" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/item_bebida"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Coca-Cola"
+                    android:textColor="@color/textoprincipal"
+                    android:textSize="@dimen/tipo_pizza" />
+
+                <TextView
+                    android:id="@+id/item_descripcion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Rica bebida refrescante coca-cola de 250 ml con hielos, "
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+</androidx.cardview.widget.CardView>
